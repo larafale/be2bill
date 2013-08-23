@@ -1,0 +1,32 @@
+{
+  "name": "be2bill",
+  "version": "0.0.1",
+  "description": "node be2bill library",
+  "main": "./index",
+  "author": "larafale <as1cron@gmail.com>",
+  "dependencies": {
+    "lodash": "~1.3.1",
+    "request": "~2.27.0"
+  },
+  "devDependencies": {
+    "mocha": "1.7.4",
+    "chai": "1.7.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/larafale/be2bill.git"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "be2bill",
+    "payment"
+  ],
+  "license": "BSD"
+}
