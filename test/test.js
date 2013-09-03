@@ -22,7 +22,7 @@ describe('be2bill', function(){
     be2bill.authorization({ 
       amount: 400, 
       cardcode: '4111111111111111',
-      cardcvv: '123',<
+      cardcvv: '123',
       cardvaliditydate: '12-14',
       cardfullname: 'John Smith',
       createalias: true
