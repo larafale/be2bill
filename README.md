@@ -16,6 +16,7 @@ npm install be2bill --save
 
 ```
 var be2bill = require('be2bill')({
+  production: true, // call be2bill production url
   identifier: 'yourIdentifier',
   password: 'yourPassword',
 })
@@ -59,6 +60,7 @@ be2bill.payment({
   - high avaibility (double request)
   - Form process
   - 3D secure
+  - export API
   - enhance API
   - ...
 
