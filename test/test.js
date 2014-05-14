@@ -1,5 +1,7 @@
 var assert = require("chai").assert
 var be2bill = require('../lib/be2bill')({ identifier: 'xxx', password: 'xxx' })
+var codes = require('../lib/codes.json')
+
 
 describe('be2bill', function(){
 
@@ -24,7 +26,6 @@ describe('be2bill', function(){
       cardfullname: 'John Smith',
       createalias: true
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       authorization = body.TRANSACTIONID
       done()
@@ -43,7 +44,6 @@ describe('be2bill', function(){
       cardfullname: 'John Smith',
       createalias: true
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       alias = body.ALIAS
       payment = body.TRANSACTIONID
@@ -60,7 +60,6 @@ describe('be2bill', function(){
       alias: alias,
       aliasmode: 'oneclick'
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       done()
     })
@@ -73,7 +72,6 @@ describe('be2bill', function(){
     be2bill.refund({ 
       transactionid: payment
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       done()
     })
@@ -88,7 +86,6 @@ describe('be2bill', function(){
       alias: alias,
       aliasmode: 'oneclick'
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       done()
     })
@@ -101,7 +98,6 @@ describe('be2bill', function(){
     be2bill.capture({ 
       transactionid: authorization
     }, function(err, res, body){
-      if (err) throw err
       assert.equal(body.EXECCODE, '0000')
       done()
     })
