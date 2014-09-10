@@ -25,7 +25,7 @@
   , "4005": "Suspicion de fraude"
   , "4006": "Carte perdue"
   , "4007": "Carte volée"
-  , "4008": "Authentification 3DSecure"
+  , "4008": "Authentification 3DSecure échouée"
   , "4009": "Authentification 3DSecure expirée"
   , "4010": "Transaction invalide"
   , "4011": "Transaction doublon"
