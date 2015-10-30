@@ -1,5 +1,5 @@
 var assert = require("chai").assert
-var be2bill = require('../lib/be2bill')({ identifier: 'xxx', password: 'xxx' })
+var be2bill = require('../lib/be2bill')({ identifier: 'xxx', password: 'xxx', debug: true })
 var codes = require('../lib/codes.json')
 
 
