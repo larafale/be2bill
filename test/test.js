@@ -22,7 +22,7 @@ describe('be2bill', function(){
       amount: 400, 
       cardcode: '4111111111111111',
       cardcvv: '123',
-      cardvaliditydate: '12-14',
+      cardvaliditydate: '12-18',
       cardfullname: 'John Smith',
       createalias: true
     }, function(err, res, body){
@@ -40,7 +40,7 @@ describe('be2bill', function(){
       amount: 400, 
       cardcode: '4111111111111111',
       cardcvv: '123',
-      cardvaliditydate: '12-14',
+      cardvaliditydate: '12-18',
       cardfullname: 'John Smith',
       createalias: true
     }, function(err, res, body){
