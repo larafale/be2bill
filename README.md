@@ -54,6 +54,7 @@ be2bill.payment({
   - .refund(params, function(err, res, body){ })
   - .capture(params, function(err, res, body){ })
   - .credit(params, function(err, res, body){ })
+  - .exportChargeBacks(params, function(err, res, body){ })
 
 ## Contribute
 
